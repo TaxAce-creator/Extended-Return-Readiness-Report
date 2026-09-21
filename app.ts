@@ -1,0 +1,30 @@
+import express from "express";
+import rateLimit from "express-rate-limit";
+import { createExpressMiddleware } from "@trpc/server/adapters/express";
+import { appRouter } from "./routers";
+import { createContext } from "./_core/context";
+import { zapierWebhookRouter } from "./webhooks/zapier";
+import { scheduledBriefingRouter } from "./webhooks/scheduledBriefing";
+
+const app = express();
+app.set("trust proxy", 1);
+app.disable("x-powered-by");
+app.use((req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  res.setHeader("Content-Security-Policy", ["default-src 'self'", "base-uri 'self'", "object-src 'none'", "frame-ancestors 'none'", "form-action 'self'", "img-src 'self' data: https:", "font-src 'self' data: https:", "style-src 'self' 'unsafe-inline' https:", "script-src 'self' 'unsafe-inline'", "connect-src 'self' https:"].join("; "));
+  res.setHeader("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload");
+  next();
+});
+app.use(express.json({ limit: "10mb" }));
+app.use(express.urlencoded({ limit: "10mb", extended: true }));
+app.use("/api/trpc/localAuth.login", rateLimit({ windowMs: 15 * 60_000, max: 10, standardHeaders: true, legacyHeaders: false }));
+app.use("/api/trpc/localAuth.forgotPassword", rateLimit({ windowMs: 60 * 60_000, max: 3, standardHeaders: true, legacyHeaders: false }));
+app.use("/api/trpc/mfa.completeLogin", rateLimit({ windowMs: 5 * 60_000, max: 5, standardHeaders: true, legacyHeaders: false }));
+app.use("/api/webhooks", zapierWebhookRouter);
+app.use("/api/scheduled", scheduledBriefingRouter);
+app.use("/api/trpc", createExpressMiddleware({ router: appRouter, createContext }));
+app.get("/api/health", (_req, res) => res.json({ ok: true, service: "taxace-dashboard" }));
+export default app;
