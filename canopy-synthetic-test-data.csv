@@ -1,0 +1,61 @@
+Subtask Name,Subtask Status,Client Name,Task Type,Custom Field Value,Parent Task,Subtask Due Date,Task Return Type,Task Tax Year,Task ID,Subtask ID
+TP: Client Tax Return in Process - Inputting,In progress,Blue Harbor LLC 01,Tax Preparation,,2026 Tax Return - Blue Harbor LLC 01,09/16/2026,1040,2025,TASK-1000,SUB-5000
+TP: Sent to Tax Manager - Initial Review,Needs review,Cedar Ridge LLC 02,Tax Preparation,Jordan Lee,2026 Tax Return - Cedar Ridge LLC 02,09/22/2026,1120S,2026,TASK-1001,SUB-5001
+TP: Need More Info From Client,With Client,Golden Mesa LLC 03,Tax Preparation,Morgan Santos,2026 Tax Return - Golden Mesa LLC 03,09/23/2026,1065,2026,TASK-1002,SUB-5002
+TP: Update Return with new docs (after review),Complete,Lighthouse LLC 04,Tax Preparation,Taylor Cruz,2026 Tax Return - Lighthouse LLC 04,09/24/2026,1120,2026,TASK-1003,SUB-5003
+TP: Perform Video Review & Send to Client,No status,Maple Grove LLC 05,Tax Preparation,Alex Rivera,2026 Tax Return - Maple Grove LLC 05,09/12/2026,1041,2026,TASK-1004,SUB-5004
+TP: Call Client About Video Review,In progress,Northstar LLC 06,Tax Preparation,Jordan Lee,2026 Tax Return - Northstar LLC 06,09/26/2026,1040,2026,TASK-1005,SUB-5005
+TP: Tax Return Final Review,Needs review,Silver Pine LLC 07,Tax Preparation,Morgan Santos,2026 Tax Return - Silver Pine LLC 07,09/27/2026,1120S,2026,TASK-1006,SUB-5006
+TP: Schedule Appt,With Client,Sunrise LLC 08,Tax Preparation,Taylor Cruz,2026 Tax Return - Sunrise LLC 08,09/28/2026,1065,2025,TASK-1007,SUB-5007
+TP: Host Appointment,Complete,Willow Creek LLC 09,Tax Preparation,Alex Rivera,2026 Tax Return - Willow Creek LLC 09,09/08/2026,1120,2026,TASK-1008,SUB-5008
+TP Checkpoint: Appointment/Video Review,No status,Evergreen LLC 10,Tax Preparation,Jordan Lee,2026 Tax Return - Evergreen LLC 10,09/30/2026,1041,2026,TASK-1009,SUB-5009
+TP Checkpoint: Are there additional items needed after appointment/video review?,In progress,Blue Harbor Inc. 11,Tax Preparation,Morgan Santos,2026 Tax Return - Blue Harbor Inc. 11,10/01/2026,1040,2026,TASK-1010,SUB-5010
+TP: Additional items needed after appointment,Needs review,Cedar Ridge Inc. 12,Tax Preparation,,2026 Tax Return - Cedar Ridge Inc. 12,10/02/2026,1120S,2026,TASK-1011,SUB-5011
+TP: Update Return with new docs (after apt),With Client,Golden Mesa Inc. 13,Tax Preparation,Alex Rivera,2026 Tax Return - Golden Mesa Inc. 13,09/04/2026,1065,2026,TASK-1012,SUB-5012
+TP: Billed Client for Tax Return,Complete,Lighthouse Inc. 14,Tax Preparation,Jordan Lee,2026 Tax Return - Lighthouse Inc. 14,10/04/2026,1120,2026,TASK-1013,SUB-5013
+TP: Received Payment from Client,No status,Maple Grove Inc. 15,Tax Preparation,Morgan Santos,2026 Tax Return - Maple Grove Inc. 15,10/05/2026,1041,2025,TASK-1014,SUB-5014
+TP: Send Electronic Signature Forms through ProSeries,In progress,Northstar Inc. 16,Tax Preparation,Taylor Cruz,2026 Tax Return - Northstar Inc. 16,10/06/2026,1040,2026,TASK-1015,SUB-5015
+TP: Electronic Filing Signatures Signed in ProSeries,Needs review,Silver Pine Inc. 17,Tax Preparation,Alex Rivera,2026 Tax Return - Silver Pine Inc. 17,08/31/2026,1120S,2026,TASK-1016,SUB-5016
+TP: Send Electronic Signature Forms through Adobe,With Client,Sunrise Inc. 18,Tax Preparation,Jordan Lee,2026 Tax Return - Sunrise Inc. 18,10/08/2026,1065,2026,TASK-1017,SUB-5017
+TP: Electronic Filing Signatures Signed in Adobe,Complete,Willow Creek Inc. 19,Tax Preparation,Morgan Santos,2026 Tax Return - Willow Creek Inc. 19,10/09/2026,1120,2026,TASK-1018,SUB-5018
+TP: Return E-filed,No status,Evergreen Inc. 20,Tax Preparation,Taylor Cruz,2026 Tax Return - Evergreen Inc. 20,10/10/2026,1041,2026,TASK-1019,SUB-5019
+TP: CR - 1st Follow Up,In progress,Blue Harbor Partners 21,Tax Preparation,Alex Rivera,2026 Tax Return - Blue Harbor Partners 21,09/14/2026,1040,2026,TASK-1020,SUB-5020
+TP: CR - 2nd Follow Up,Needs review,Cedar Ridge Partners 22,Tax Preparation,Jordan Lee,2026 Tax Return - Cedar Ridge Partners 22,10/12/2026,1120S,2025,TASK-1021,SUB-5021
+"TP: CR - 3rd Follow Up ""On Hold""",With Client,Golden Mesa Partners 23,Tax Preparation,,2026 Tax Return - Golden Mesa Partners 23,10/13/2026,1065,2026,TASK-1022,SUB-5022
+TP: Client Tax Return in Process - Inputting,Complete,Lighthouse Partners 24,Tax Preparation,Taylor Cruz,2026 Tax Return - Lighthouse Partners 24,10/14/2026,1120,2026,TASK-1023,SUB-5023
+TP: Sent to Tax Manager - Initial Review,No status,Maple Grove Partners 25,Tax Preparation,Alex Rivera,2026 Tax Return - Maple Grove Partners 25,09/10/2026,1041,2026,TASK-1024,SUB-5024
+TP: Need More Info From Client,In progress,Northstar Partners 26,Tax Preparation,Jordan Lee,2026 Tax Return - Northstar Partners 26,10/16/2026,1040,2026,TASK-1025,SUB-5025
+TP: Update Return with new docs (after review),Needs review,Silver Pine Partners 27,Tax Preparation,Morgan Santos,2026 Tax Return - Silver Pine Partners 27,10/17/2026,1120S,2026,TASK-1026,SUB-5026
+TP: Perform Video Review & Send to Client,With Client,Sunrise Partners 28,Tax Preparation,Taylor Cruz,2026 Tax Return - Sunrise Partners 28,10/18/2026,1065,2026,TASK-1027,SUB-5027
+TP: Call Client About Video Review,Complete,Willow Creek Partners 29,Tax Preparation,Alex Rivera,2026 Tax Return - Willow Creek Partners 29,09/06/2026,1120,2025,TASK-1028,SUB-5028
+TP: Tax Return Final Review,No status,Evergreen Partners 30,Tax Preparation,Jordan Lee,2026 Tax Return - Evergreen Partners 30,10/20/2026,1041,2026,TASK-1029,SUB-5029
+TP: Schedule Appt,In progress,Blue Harbor Family 31,Tax Preparation,Morgan Santos,2026 Tax Return - Blue Harbor Family 31,10/21/2026,1040,2026,TASK-1030,SUB-5030
+TP: Host Appointment,Needs review,Cedar Ridge Family 32,Tax Preparation,Taylor Cruz,2026 Tax Return - Cedar Ridge Family 32,10/22/2026,1120S,2026,TASK-1031,SUB-5031
+TP Checkpoint: Appointment/Video Review,With Client,Golden Mesa Family 33,Tax Preparation,Alex Rivera,2026 Tax Return - Golden Mesa Family 33,09/02/2026,1065,2026,TASK-1032,SUB-5032
+TP Checkpoint: Are there additional items needed after appointment/video review?,Complete,Lighthouse Family 34,Tax Preparation,,2026 Tax Return - Lighthouse Family 34,10/24/2026,1120,2026,TASK-1033,SUB-5033
+TP: Additional items needed after appointment,No status,Maple Grove Family 35,Tax Preparation,Morgan Santos,2026 Tax Return - Maple Grove Family 35,10/25/2026,1041,2026,TASK-1034,SUB-5034
+TP: Update Return with new docs (after apt),In progress,Northstar Family 36,Tax Preparation,Taylor Cruz,2026 Tax Return - Northstar Family 36,09/21/2026,1040,2025,TASK-1035,SUB-5035
+TP: Billed Client for Tax Return,Needs review,Silver Pine Family 37,Tax Preparation,Alex Rivera,2026 Tax Return - Silver Pine Family 37,09/16/2026,1120S,2026,TASK-1036,SUB-5036
+TP: Received Payment from Client,With Client,Sunrise Family 38,Tax Preparation,Jordan Lee,2026 Tax Return - Sunrise Family 38,09/23/2026,1065,2026,TASK-1037,SUB-5037
+TP: Send Electronic Signature Forms through ProSeries,Complete,Willow Creek Family 39,Tax Preparation,Morgan Santos,2026 Tax Return - Willow Creek Family 39,09/24/2026,1120,2026,TASK-1038,SUB-5038
+TP: Electronic Filing Signatures Signed in ProSeries,No status,Evergreen Family 40,Tax Preparation,Taylor Cruz,2026 Tax Return - Evergreen Family 40,09/25/2026,1041,2026,TASK-1039,SUB-5039
+TP: Send Electronic Signature Forms through Adobe,In progress,Blue Harbor Holdings 41,Tax Preparation,Alex Rivera,2026 Tax Return - Blue Harbor Holdings 41,09/12/2026,1040,2026,TASK-1040,SUB-5040
+TP: Electronic Filing Signatures Signed in Adobe,Needs review,Cedar Ridge Holdings 42,Tax Preparation,Jordan Lee,2026 Tax Return - Cedar Ridge Holdings 42,09/27/2026,1120S,2026,TASK-1041,SUB-5041
+TP: Return E-filed,With Client,Golden Mesa Holdings 43,Tax Preparation,Morgan Santos,2026 Tax Return - Golden Mesa Holdings 43,09/28/2026,1065,2025,TASK-1042,SUB-5042
+TP: CR - 1st Follow Up,Complete,Lighthouse Holdings 44,Tax Preparation,Taylor Cruz,2026 Tax Return - Lighthouse Holdings 44,09/29/2026,1120,2026,TASK-1043,SUB-5043
+TP: CR - 2nd Follow Up,No status,Maple Grove Holdings 45,Tax Preparation,,2026 Tax Return - Maple Grove Holdings 45,09/08/2026,1041,2026,TASK-1044,SUB-5044
+"TP: CR - 3rd Follow Up ""On Hold""",In progress,Northstar Holdings 46,Tax Preparation,Jordan Lee,2026 Tax Return - Northstar Holdings 46,10/01/2026,1040,2026,TASK-1045,SUB-5045
+TP: Client Tax Return in Process - Inputting,Needs review,Silver Pine Holdings 47,Tax Preparation,Morgan Santos,2026 Tax Return - Silver Pine Holdings 47,10/02/2026,1120S,2026,TASK-1046,SUB-5046
+TP: Sent to Tax Manager - Initial Review,With Client,Sunrise Holdings 48,Tax Preparation,Taylor Cruz,2026 Tax Return - Sunrise Holdings 48,10/03/2026,1065,2026,TASK-1047,SUB-5047
+TP: Need More Info From Client,Complete,Willow Creek Holdings 49,Tax Preparation,Alex Rivera,2026 Tax Return - Willow Creek Holdings 49,09/04/2026,1120,2026,TASK-1048,SUB-5048
+TP: Update Return with new docs (after review),No status,Evergreen Holdings 50,Tax Preparation,Jordan Lee,2026 Tax Return - Evergreen Holdings 50,10/05/2026,1041,2025,TASK-1049,SUB-5049
+TP: Perform Video Review & Send to Client,In progress,Blue Harbor LLC 51,Tax Preparation,Morgan Santos,2026 Tax Return - Blue Harbor LLC 51,10/06/2026,1040,2026,TASK-1050,SUB-5050
+TP: Call Client About Video Review,Needs review,Cedar Ridge LLC 52,Tax Preparation,Taylor Cruz,2026 Tax Return - Cedar Ridge LLC 52,10/07/2026,1120S,2026,TASK-1051,SUB-5051
+TP: Tax Return Final Review,With Client,Golden Mesa LLC 53,Tax Preparation,Alex Rivera,2026 Tax Return - Golden Mesa LLC 53,08/31/2026,1065,2026,TASK-1052,SUB-5052
+TP: Schedule Appt,Complete,Lighthouse LLC 54,Tax Preparation,Jordan Lee,2026 Tax Return - Lighthouse LLC 54,10/09/2026,1120,2026,TASK-1053,SUB-5053
+TP: Host Appointment,No status,Maple Grove LLC 55,Tax Preparation,Morgan Santos,2026 Tax Return - Maple Grove LLC 55,10/10/2026,1041,2026,TASK-1054,SUB-5054
+TP Checkpoint: Appointment/Video Review,In progress,Northstar LLC 56,Tax Preparation,,2026 Tax Return - Northstar LLC 56,10/11/2026,1040,2026,TASK-1055,SUB-5055
+TP Checkpoint: Are there additional items needed after appointment/video review?,Needs review,Silver Pine LLC 57,Tax Preparation,Alex Rivera,2026 Tax Return - Silver Pine LLC 57,09/14/2026,1120S,2025,TASK-1056,SUB-5056
+TP: Additional items needed after appointment,With Client,Sunrise LLC 58,Tax Preparation,Jordan Lee,2026 Tax Return - Sunrise LLC 58,10/13/2026,1065,2026,TASK-1057,SUB-5057
+TP: Update Return with new docs (after apt),Complete,Willow Creek LLC 59,Tax Preparation,Morgan Santos,2026 Tax Return - Willow Creek LLC 59,10/14/2026,1120,2026,TASK-1058,SUB-5058
+TP: Billed Client for Tax Return,No status,Evergreen LLC 60,Tax Preparation,Taylor Cruz,2026 Tax Return - Evergreen LLC 60,10/15/2026,1041,2026,TASK-1059,SUB-5059
