@@ -1,0 +1,406 @@
+/* =============================================================================
+   TaxAce Tax Prep Dashboard — "Executive Clarity" Design System v2
+   Design Movement: Premium Financial Services UI
+   Core: Warm cream base, deep forest green primary, luxury typography
+   Tier 2: Richer depth, glass cards, animated KPIs, premium tab nav
+   ============================================================================= */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* TaxAce Brand Colors */
+  --forest-green: oklch(0.28 0.07 155);
+  --forest-green-light: oklch(0.38 0.07 155);
+  --forest-green-pale: oklch(0.92 0.03 155);
+  --warm-cream: oklch(0.98 0.008 85);
+  --warm-cream-dark: oklch(0.95 0.012 85);
+  --amber-gold: oklch(0.75 0.14 75);
+  --amber-gold-light: oklch(0.92 0.06 85);
+  --sage-green: oklch(0.65 0.08 155);
+  --terracotta: oklch(0.62 0.14 30);
+  --slate-blue: oklch(0.55 0.08 240);
+
+  /* Core Theme */
+  --radius: 0.625rem;
+  --background: oklch(0.975 0.008 85);
+  --foreground: oklch(0.18 0.04 155);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.04 155);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.04 155);
+  --primary: oklch(0.28 0.07 155);
+  --primary-foreground: oklch(0.97 0.008 85);
+  --secondary: oklch(0.95 0.012 85);
+  --secondary-foreground: oklch(0.28 0.07 155);
+  --muted: oklch(0.94 0.01 85);
+  --muted-foreground: oklch(0.52 0.04 155);
+  --accent: oklch(0.92 0.03 155);
+  --accent-foreground: oklch(0.28 0.07 155);
+  --destructive: oklch(0.62 0.14 30);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.89 0.015 85);
+  --input: oklch(0.89 0.015 85);
+  --ring: oklch(0.28 0.07 155);
+
+  /* Charts */
+  --chart-1: oklch(0.28 0.07 155);
+  --chart-2: oklch(0.75 0.14 75);
+  --chart-3: oklch(0.62 0.14 30);
+  --chart-4: oklch(0.55 0.08 240);
+  --chart-5: oklch(0.65 0.08 155);
+
+  /* Sidebar */
+  --sidebar: oklch(0.28 0.07 155);
+  --sidebar-foreground: oklch(0.97 0.008 85);
+  --sidebar-primary: oklch(0.75 0.14 75);
+  --sidebar-primary-foreground: oklch(0.18 0.04 155);
+  --sidebar-accent: oklch(0.35 0.07 155);
+  --sidebar-accent-foreground: oklch(0.97 0.008 85);
+  --sidebar-border: oklch(0.35 0.07 155);
+  --sidebar-ring: oklch(0.75 0.14 75);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1440px;
+    }
+  }
+
+  /* ── Premium card base ─────────────────────────────────────────────────────── */
+  .ta-card {
+    background: oklch(1 0 0);
+    border: 1px solid oklch(0.89 0.015 85);
+    border-radius: 1rem;
+    box-shadow:
+      0 1px 2px oklch(0.28 0.07 155 / 0.04),
+      0 4px 16px oklch(0.28 0.07 155 / 0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .ta-card:hover {
+    box-shadow:
+      0 2px 4px oklch(0.28 0.07 155 / 0.06),
+      0 8px 24px oklch(0.28 0.07 155 / 0.10);
+    transform: translateY(-1px);
+  }
+
+  /* ── Glass card (for alert panels) ────────────────────────────────────────── */
+  .ta-glass {
+    background: oklch(1 0 0 / 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid oklch(0.89 0.015 85 / 0.8);
+    border-radius: 1rem;
+    box-shadow:
+      0 2px 8px oklch(0.28 0.07 155 / 0.06),
+      0 12px 32px oklch(0.28 0.07 155 / 0.08);
+  }
+
+  /* ── KPI chip ──────────────────────────────────────────────────────────────── */
+  .ta-kpi {
+    border-radius: 0.875rem;
+    padding: 0.875rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .ta-kpi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px oklch(0 0 0 / 0.08);
+  }
+
+  /* ── Tab navigation ────────────────────────────────────────────────────────── */
+  .ta-tab-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.3rem;
+    border-radius: 0.875rem;
+    background: oklch(0.93 0.012 85);
+    border: 1px solid oklch(0.87 0.015 85);
+    box-shadow: inset 0 1px 3px oklch(0.28 0.07 155 / 0.06);
+  }
+  .ta-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.625rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: oklch(0.52 0.04 155);
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.18s ease;
+    white-space: nowrap;
+  }
+  .ta-tab:hover:not(.ta-tab-active) {
+    background: oklch(0.97 0.006 85);
+    color: oklch(0.32 0.06 155);
+  }
+  .ta-tab-active {
+    background: oklch(1 0 0);
+    color: oklch(0.22 0.07 155);
+    font-weight: 600;
+    border-color: oklch(0.88 0.015 85);
+    box-shadow:
+      0 1px 4px oklch(0.28 0.07 155 / 0.10),
+      0 2px 8px oklch(0.28 0.07 155 / 0.06);
+  }
+  .ta-tab-accent.ta-tab-active {
+    background: oklch(0.28 0.07 155);
+    color: oklch(0.97 0.008 85);
+    border-color: oklch(0.22 0.07 155);
+    box-shadow: 0 2px 10px oklch(0.28 0.07 155 / 0.35);
+  }
+  .ta-tab-accent.ta-tab-active svg {
+    color: oklch(0.75 0.14 75);
+  }
+
+  /* ── Progress bar ──────────────────────────────────────────────────────────── */
+  .ta-progress-track {
+    height: 8px;
+    border-radius: 999px;
+    background: oklch(0.91 0.015 85);
+    overflow: hidden;
+  }
+  .ta-progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ── Stage card ────────────────────────────────────────────────────────────── */
+  .stage-card {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+  .stage-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 4px 16px oklch(0.28 0.07 155 / 0.12),
+      0 1px 4px oklch(0.28 0.07 155 / 0.06);
+  }
+  .stage-card.active {
+    border-left-color: oklch(0.28 0.07 155);
+    background-color: oklch(0.94 0.025 155);
+  }
+
+  /* ── Client table row ──────────────────────────────────────────────────────── */
+  .client-card {
+    transition: all 0.15s ease;
+  }
+  .client-card:hover {
+    background-color: oklch(0.97 0.008 85) !important;
+    box-shadow: inset 3px 0 0 oklch(0.28 0.07 155);
+  }
+
+  /* ── Upload zone ───────────────────────────────────────────────────────────── */
+  .upload-zone {
+    border: 2px dashed oklch(0.75 0.05 155);
+    transition: all 0.2s ease;
+  }
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: oklch(0.28 0.07 155);
+    background-color: oklch(0.96 0.02 155);
+    box-shadow: 0 0 0 4px oklch(0.28 0.07 155 / 0.08);
+  }
+
+  /* ── Status badges ─────────────────────────────────────────────────────────── */
+  .status-ready {
+    background-color: oklch(0.92 0.06 155);
+    color: oklch(0.28 0.07 155);
+  }
+  .status-in-progress {
+    background-color: oklch(0.92 0.06 240);
+    color: oklch(0.35 0.1 240);
+  }
+  .status-needs-review {
+    background-color: oklch(0.95 0.08 75);
+    color: oklch(0.50 0.12 75);
+  }
+  .status-on-hold {
+    background-color: oklch(0.94 0.04 30);
+    color: oklch(0.50 0.12 30);
+  }
+  .status-waiting {
+    background-color: oklch(0.93 0.04 280);
+    color: oklch(0.45 0.1 280);
+  }
+  .status-no-status {
+    background-color: oklch(0.93 0.01 85);
+    color: oklch(0.52 0.04 85);
+  }
+  .status-draft {
+    background-color: oklch(0.93 0.02 200);
+    color: oklch(0.45 0.06 200);
+  }
+
+  /* ── Overdue highlight ─────────────────────────────────────────────────────── */
+  .overdue {
+    border-left: 3px solid oklch(0.62 0.14 30) !important;
+  }
+
+  /* ── Animations ────────────────────────────────────────────────────────────── */
+  @keyframes countUp {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .count-animate {
+    animation: countUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in-up {
+    animation: fadeInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(16px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .slide-in-right {
+    animation: slideInRight 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 oklch(0.62 0.14 30 / 0.4); }
+    50% { box-shadow: 0 0 0 6px oklch(0.62 0.14 30 / 0); }
+  }
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      oklch(0.94 0.01 85) 25%,
+      oklch(0.97 0.008 85) 50%,
+      oklch(0.94 0.01 85) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  /* ── Scrollbar styling ─────────────────────────────────────────────────────── */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: oklch(0.95 0.008 85);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.80 0.03 155);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.65 0.05 155);
+  }
+
+  /* ── Divider ───────────────────────────────────────────────────────────────── */
+  .ta-divider {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      oklch(0.88 0.015 85),
+      transparent
+    );
+  }
+}
